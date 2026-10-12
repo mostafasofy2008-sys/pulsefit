@@ -630,3 +630,44 @@ footer {
         text-align: center;
     }
 }
+
+/* Mobile Responsive */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  h1 {
+    font-size: clamp(28px, 8vw, 42px);
+  }
+
+  p {
+    max-width: 100%;
+  }
+}
